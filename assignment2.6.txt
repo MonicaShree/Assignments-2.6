@@ -1,0 +1,92 @@
+1) Write a program to accepts two numbers from stdin and find all the odd as well as even
+   numbers present in between them.
+
+
+import java.util.*;
+class HelloWorld 
+{
+public static void main(String[] args)
+{
+int integer1 , integer2,i,j ;
+Scanner sc = new Scanner(System.in);
+integer1 = sc.nextInt();
+integer2 = sc.nextInt();
+System.out.println("Even:");
+for(i=integer1;i<=integer2;i++)
+{
+if(i%2==0)
+{
+System.out.println(i);
+}
+}
+System.out.println("Odd:");
+for(j=integer1;j<=integer2;j++)
+{
+if(j%2!=0)
+{
+System.out.println(j);
+}
+}
+}
+}
+
+
+
+2) Joe is scared to go to school. When her dad asked the reason, joe said she is unable to
+   complete the task given by her teacher. The task was to find the “first 10 multiples” of the
+   number entered from stdin
+
+
+import java.util.*;
+
+public class HelloWorld{
+
+  
+public static void main(String []args){
+ 
+System.out.print("Input:");
+  
+Scanner sc = new Scanner(System.in);
+ 
+int input = sc.nextInt();
+ 
+int i ;
+  
+for(i=1;i<=10;i++)
+ {
+ 
+ System.out.println(input+" x "+i+" = " +(i*input));
+   
+ }
+   
+  }
+
+}
+
+
+
+
+3) Write a program consisting method sum() and demonstrate the concept of method
+   overloading using this method.
+
+
+
+import java.util.*;
+class Overloading{  
+static int sum(int x,int y)
+{
+return x+y;
+}  
+static int sum(int x,int y,int z)
+{
+return x+y+z;
+}  
+}  
+class HelloWorld
+{  
+public static void main(String[] args)
+{  
+System.out.println(Overloading.sum(10,20));  
+System.out.println(Overloading.sum(30,40,50));  
+}
+}
